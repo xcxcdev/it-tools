@@ -53,7 +53,7 @@ const formats = {
   }),
 };
 
-updateColorValue(colord('#1ea54c'));
+updateColorValue(colord('#1ea64c'));
 
 function updateColorValue(value: Colord | undefined, omitLabel?: string) {
   if (value === undefined) {
@@ -81,7 +81,7 @@ function updateColorValue(value: Colord | undefined, omitLabel?: string) {
         :test-id="`input-${key}`"
         :label="`${label}:`"
         label-position="left"
-        label-width="100px"
+        label-width="140px"
         label-align="right"
         :placeholder="placeholder"
         :validation="validation"
@@ -91,7 +91,7 @@ function updateColorValue(value: Colord | undefined, omitLabel?: string) {
         @update:value="(v:string) => updateColorValue(parse(v), key)"
       />
 
-      <n-form-item v-else-if="type === 'color-picker'" :label="`${label}:`" label-width="100" label-placement="left" :show-feedback="false">
+      <n-form-item v-else-if="type === 'color-picker'" :label="`${label}:`" label-width="160" label-placement="left" :show-feedback="false">
         <n-color-picker
           v-model:value="formats[key].value.value"
           placement="bottom-end"
