@@ -32,7 +32,7 @@ const b64ValidationWatch = [decodeUrlSafe];
     <c-input-text
       v-model:value="textInput"
       multiline
-      placeholder="Put your string here...。。。"
+      placeholder="Put your string herestring here...。。。"
       rows="5"
       label="String to encode"
       raw-text
@@ -44,7 +44,7 @@ const b64ValidationWatch = [decodeUrlSafe];
       :value="base64Output"
       multiline
       readonly
-      placeholder="The base64 encoding of your string will be here"
+      placeholder="The base64  will be here"
       rows="5"
       mb-5
     />
